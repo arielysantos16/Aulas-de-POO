@@ -32,3 +32,15 @@ else:
 
 #Questão 05
 
+frase = input("Digite uma frase")
+
+indice_vogais = [ ]
+total = 0
+for letra in frase:
+    if letra in "aeiou":
+        indice_vogal = frase.find(letra)#retorna o índice da vogal
+        indice_vogais.append(indice_vogal)
+        total += 1 #calcula o total de vogais
+
+print(f"O índice das vogais é {indice_vogais}.")
+print(f"O total de vogais é: {total}.")
