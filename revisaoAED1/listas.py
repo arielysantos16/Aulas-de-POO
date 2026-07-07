@@ -59,3 +59,42 @@ print("Soma dos valores da lista:", soma)
 
 media = soma/10
 print("Média dos valores da lista:", media)
+
+#questão 4
+lista1 = []
+lista2 = []
+lista3 = []
+
+quant1 = int(input("Informe a quantidade de elementos da lista 1: "))
+for i in range(quant1):
+    elemento1 = int(input(f"Digite um dos {quant1} elementos: "))
+    lista1.append(elemento1)
+
+quant2 = int(input("Informe a quantidade de elementos da lista 2: "))
+for i in range(quant2):
+    elemento2 = int(input(f"Digite um dos {quant2} elementos: "))
+    lista2.append(elemento2)
+
+#comparar listas
+if len(lista1) >= len(lista2):#os remanecentes são da 1
+    quant3 = len(lista1)
+
+    for i in range(quant3):
+        lista3.append(lista1[i])
+        if i < len(lista2):
+            lista3.append(lista2[i])  
+
+else:#os remanecentes são da 2
+    quant3 = len(lista2)#tamanho lista 3
+    
+    for i in range(quant3):
+        if i < len(lista1):
+            lista3.append(lista1[i])
+        
+        lista3.append(lista2[i])
+
+print('Lista 1:', lista1)
+
+print('Lista 2:', lista2)
+
+print('Alternada:', sorted(lista3))
