@@ -1,4 +1,4 @@
-#questão 01
+#questão 01 ____ERRO
 valores = [int(input("Informe uma lista de números inteiros, com pelo menos 4 valores:"))]
 print(f"Lista original: {valores}.")
 
@@ -16,7 +16,7 @@ for indice in range(len(valores)):
         indices_impares.append()
     print(f"Lista dos elementos de índice ímpar: {indices_impares}.")
 
-#Questão 02
+#Questão 02 ____ERRO
 
 while True:
     resposta = int(input("Deseja informar URLs? \n1) Sim \n2)Não"))
@@ -35,24 +35,6 @@ while True:
             
     elif resposta == 2:    
         break
-
-
-    
-enderecos = [input("Informe endereços Web(URLs) que sempre começam com 'www.'e sempre terminam com '.com' .")]
-URLs = []
-dominios = []
-for endereco in enderecos:
-    print("Domínios: ", dominios)
-    print (enderecos)    
-
-
-
-
-
-
-
-    
-    ############OS 3 TÊM ERROS
     else:
         print("Opa, o número informado está incorreto. =/")
 
