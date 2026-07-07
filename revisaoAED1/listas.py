@@ -98,3 +98,25 @@ print('Lista 1:', lista1)
 print('Lista 2:', lista2)
 
 print('Alternada:', lista3)
+
+#questão 5 ____ERRO na intersecção
+import random
+
+lista1 = []
+lista2 = []
+interseccao = []
+
+for i in range(20):
+    lista1.append(random.randint(0,50))
+
+for i in range(20):
+    lista2.append(random.randint(0,50))
+
+print('Lista 1:', lista1)
+print('Lista 2:', lista2)
+
+print('Intersecção:', sorted(interseccao))
+
+#questão 6
+
+#questão 7
