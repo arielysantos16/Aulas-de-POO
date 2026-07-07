@@ -134,3 +134,11 @@ print('Sublistas: ', lista[::t])
 
 
 #questão 7
+import random 
+
+n = int(input('Informe o tamanho da matriz: '))
+linhas = n
+colunas = n
+
+lista = [[random.randint(0,100) for i in range(colunas)] for l in range(linhas)]
+print(lista)
