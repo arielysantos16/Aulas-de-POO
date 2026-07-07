@@ -1,1 +1,5 @@
-
+class Onibus:
+    def __init__(self, placa, nome_moto, num_assentos):
+        self.placa = placa
+        self.nome_motorista = nome_moto
+        self.assentos = num_assentos
