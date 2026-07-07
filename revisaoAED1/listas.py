@@ -35,6 +35,23 @@ while True:
             
     elif resposta == 2:    
         break
+
+
+    
+enderecos = [input("Informe endereços Web(URLs) que sempre começam com 'www.'e sempre terminam com '.com' .")]
+URLs = []
+dominios = []
+for endereco in enderecos:
+    print("Domínios: ", dominios)
+    print (enderecos)    
+
+
+
+
+
+
+
+    
     ############OS 3 TÊM ERROS
     else:
         print("Opa, o número informado está incorreto. =/")
@@ -42,10 +59,21 @@ while True:
 #questão 03
 import random
 
+numeros = []
 for i in range(10):
-    numeros = [random.randint(-100,100)]
+    numeros.append(random.randint(-100,100))
     
 ordenada = sorted(numeros)
 print("Lista ordenada:", ordenada)
 
 print("Lista original:", numeros)
+
+print("Índice do maior valor da lista:", max(numeros))
+
+print("Índice do menor valor da lista:", min(numeros))
+
+soma = sum(numeros)
+print("Soma dos valores da lista:", soma)
+
+media = soma/10
+print("Média dos valores da lista:", media)
