@@ -1,4 +1,3 @@
-#questão 1
 class Carteira:
     def __init__(self, moeda, saldo):
         self.moeda = moeda
