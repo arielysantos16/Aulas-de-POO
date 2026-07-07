@@ -35,7 +35,7 @@ while True:
             
     elif resposta == 2:    
         break
-    
+    ############OS 3 TÊM ERROS
     else:
         print("Opa, o número informado está incorreto. =/")
 
