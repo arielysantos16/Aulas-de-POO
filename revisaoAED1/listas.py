@@ -60,7 +60,9 @@ print("Soma dos valores da lista:", soma)
 media = soma/10
 print("Média dos valores da lista:", media)
 
+
 #questão 4
+
 lista1 = []
 lista2 = []
 lista3 = []
