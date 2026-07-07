@@ -97,4 +97,4 @@ print('Lista 1:', lista1)
 
 print('Lista 2:', lista2)
 
-print('Alternada:', sorted(lista3))
+print('Alternada:', lista3)
