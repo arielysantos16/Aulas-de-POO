@@ -1,1 +1,49 @@
+#questão 1
+class Carteira:
+    def __init__(self, moeda, saldo):
+        self.moeda = moeda
+        self.saldo = saldo
+        
+    def __add__(self, valor_add):
+        if self.moeda == 'USD':
+            conversao_yuan = valor_add * 0.14
+            self.saldo += self.saldo + conversao_yuan
+            return self.saldo
+        
+        elif self.moeda == 'BRL':
+            conversao_yuan = valor_add * 0.85
+            self.saldo += self.saldo + conversao_yuan
+            return self.saldo 
+        
+        else:
+            self.saldo += self.saldo + valor_add
+            return self.saldo
+            
+        
+    def __sub__(self, valor_sub):
+        if self.moeda == 'USD':
+            conversao_yuan = valor_sub * 0.14
+            self.saldo += self.saldo + conversao_yuan
+            return self.saldo
+        
+        elif self.moeda == 'BRL':
+            conversao_yuan = valor_sub * 0.85
+            self.saldo += self.saldo + conversao_yuan
+            return self.saldo 
+        
+        else:
+            self.saldo += self.saldo + valor_sub
+            return self.saldo
+        
+    def __str__(self):
+        return f'Seu saldo atual é de {self.saldo} CNY.'
+        
+        
+carteira_usd = Carteira('USD', 10.0)
+valor_add = float(input('Informe um valor para adicionar no saldo:'))
+print(f'Soma de carteira USD + {valor_add} = ', carteira_usd + valor_add)
+print(carteira_usd)
 
+valor_sub = float(input('Informe um valor para subtrair no saldo:'))
+print(f'Subtração de carteira USD - {valor_sub}= ', carteira_usd - valor_sub)
+print(carteira_usd)
