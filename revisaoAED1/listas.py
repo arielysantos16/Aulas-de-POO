@@ -119,18 +119,22 @@ print('Lista 2:', lista2)
 
 print('Intersecção:', sorted(interseccao))
 
-#questão 6 ____ERRO
+#questão 6
 import random
 
 lista = []
 for i in range(20):
     lista.append(random.randint(0,100))
     
-print('Lista original: ',lista)
+print('Lista original: ',lista , '\n')
 
-t = int(input('Informe o tamanho em que desejas separar a lista em tamanhos menores: '))
-print('Sublistas: ', lista[::t])
+t = int(input('Informe o tamanho em que desejas separar a lista: '))
 
+sublista = []
+for i in range(0, len(lista), t):
+    sublista.append(lista[i:i+t])
+
+print('Sublistas: ', sublista)
 
 
 #questão 7
