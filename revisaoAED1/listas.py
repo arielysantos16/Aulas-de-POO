@@ -105,6 +105,27 @@ print('Alternada:', lista3)
 import random
 
 lista1 = []
+for i in range(20):
+    lista1.append(random.randint(0,50))
+print('Lista 1:', lista1)
+
+lista2 = []
+for i in range(20):
+    lista2.append(random.randint(0,50))
+print('Lista 2:', lista2)
+
+interseccao = []
+for i in lista1:
+    if i in lista2:
+        interseccao.append(i) 
+
+print('Intersecção:', sorted(interseccao))
+
+
+###########
+import random
+
+lista1 = []
 lista2 = []
 interseccao = []
 
