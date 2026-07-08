@@ -137,8 +137,10 @@ print('Sublistas: ', lista[::t])
 import random 
 
 n = int(input('Informe o tamanho da matriz: '))
-linhas = n
-colunas = n
 
-lista = [[random.randint(0,100) for i in range(colunas)] for l in range(linhas)]
-print(lista)
+lista = []
+for l in range(n):
+    lista.append([l for i in range(n)])
+
+for item in lista:
+    print(item)
