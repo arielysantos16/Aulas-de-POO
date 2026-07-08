@@ -1,1 +1,20 @@
-
+class Personagem():
+    def __init__(self, nome, vida):
+        self.nome = nome
+        self.vida = vida
+        
+    def tomar_dano(self, valor_dano):
+        self.vida -= valor_dano
+        
+class Mago(Personagem):
+    def __init__(self, nome, vida):
+        super().__init__(nome, vida)
+    
+class Barbaro(Personagem):
+    def __init__(self, nome, vida, mana):
+        super().__init__(nome, vida)
+        self.mana = mana
+        
+    def __str__(self):
+        return f"{self.nome} tem {self.vida} pontos de vida e {self.mana} de mana."
+    
